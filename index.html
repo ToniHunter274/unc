@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>E-COMMERCE LANDING PAGE</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500;700&family=Fraunces:wght@700&family=Inter:wght@300;500;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Montserrat:wght@300;500;700&family=Open+Sans:wght@300;400&family=Plus+Jakarta+Sans:ital,wght@0,600;0,700;1,200&family=Poppins:wght@100;200;500;600;700&family=Prompt:wght@400;500;700&family=Questrial&family=Roboto+Condensed:wght@300;400;700&family=Rubik:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;700&family=Varela+Round&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+				
+			<nav>
+				<ul>
+					<li><a href="#"><img src="images/logo.svg"></a></li>
+					<li><a href="#">Collections</a></li>
+					<li><a href="#">Men</a></li>
+					<li><a href="#">Women</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div>
+				<div style="display: flex;">
+					<div id="counter-container">
+						<span id="counter">1</span>
+					</div>
+					<img src="images/icon-cart.svg">
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<img src="images/image-avatar.png" class="d-avatar" width="45%" height="70%">
+
+			</div>
+
+	</header>
+	<div class="added-items">
+					<h4>Cart</h4>
+					<hr>
+					<div style="display: flex;">
+					<img src="images/image-product-1-thumbnail.jpg" width="20%" height="20%">
+					<div>
+					<p>Fall Limited Edition Sneakers
+					$125.00 x <span>3</span> <span>$375.00</span></p>
+					</div>
+					</div>
+					
+	</div>
+
+	<main>
+		<aside>
+			<div style="padding: 30px;">
+				<img src="images/image-product-1.jpg" class="p-one">
+			</div>
+			<div class="litt">
+				<div class="lil-mg">
+					<img src="images/image-product-1-thumbnail.jpg" class="img-sly">
+				</div>
+				<div class="lil-mg">
+					<img src="images/image-product-2-thumbnail.jpg" class="img-sly">
+				</div>
+				<div class="lil-mg">
+					<img src="images/image-product-3-thumbnail.jpg" class="img-sly">
+				</div>
+				<div class="lil-mg">
+					<img src="images/image-product-4-thumbnail.jpg" class="img-sly">
+				</div>
+			</div>
+		</aside>
+
+		<aside class="left-side">
+			<p id="color-title">SNEAKER COMPANY</p>
+			<span class="edition">Fall Limited Edition <br> Sneakers</span>
+			<p id="paragraph-one">These low profile sneakers are your perfect casual wears <br> companion. Featuring a durable rubber outer sole, they'll<br> withstand everything the weather can offer.</p>
+			<div>
+				<div class="cont">
+					<span id="black-friday">$125.00</span>
+					<span class="percent">50%</span>
+				</div>
+				<span id="prev-price">$250.00</span>
+			</div>
+			<div class="selection">
+				<div class="hm">
+					<button class="btn-gaps" onclick="totalClick(-1)">-</button><span class="inner-gaps" id="not">0</span><button class="btn-gaps" onclick="totalClick(1)">+</button>
+				</div>
+				<button class="cart-container">
+					<img src="images/icon-cart.svg">
+					&nbsp;&nbsp;&nbsp;
+					<span>Add to Cart</span>
+				</button>
+			</div>
+		</aside>
+	</main>
+	<script>
+
+		function totalClick(click){
+			const totalClicks = document.getElementById('not');
+			const sumvalue = parseInt(totalClicks.innerText) + click;
+			totalClicks.innerText = sumvalue;
+
+			if (sumvalue < 0 || sumvalue > 3) {
+				totalClicks.innerText = 0;
+			}
+		}
+	</script>
+</body>
+</html>

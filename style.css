@@ -1,0 +1,181 @@
+body{
+	font-family: 'Kumbh sans', sans-serif;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li{
+	float: left;
+}
+
+li a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding: 5px 10px;
+	color: #000;
+}
+
+header{
+	display: flex; 
+	justify-content: space-between; 
+	padding: 25px; 
+	border-bottom: 1px solid grey;
+}
+
+main{
+	display: flex;
+}
+
+.litt{
+	display: flex; 
+	padding: 30px; 
+	width: 60%;
+}
+
+.left-side{
+	width: 60%; 
+	margin-inline-end:50px; 
+	padding-block-start:100px;
+}
+
+.edition{
+	font-size: 30px; 
+	font-weight: 700; 
+	letter-spacing: 2px;
+}
+
+.cont{
+	margin-block-end:10px; 
+	margin-block-start:25px;
+}
+
+.percent{
+	padding: 6px; 
+	letter-spacing: 2px; 
+	font-size: 10px; 
+	border-radius: 5px; 
+	margin-inline-start:10px; 
+	font-weight: 700; 
+	background-color: hsl(25, 100%, 94%); 
+	color:hsl(26, 100%, 55%);
+}
+
+.hm{
+	padding: ; 
+	border-radius: 10px; 
+	background-color: hsl(223, 64%, 98%);
+}
+
+#bb{
+	width: 100%;
+	height: 1%;
+	border-bottom: 1px solid hsl(220, 14%, 75%);
+	position: relative;
+	top: -70px;
+}
+
+.img-sly:hover{
+	opacity: 0.5;
+}
+
+.img-sly{
+	border-radius: 15px;
+	width: 65%;
+}
+
+.p-one{
+	width: 60%;
+	border-radius: 15px;
+}
+
+#color-title{
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: hsl(26, 100%, 55%);
+}
+
+.cart-container{
+	width: 30%;
+	background-color: hsl(26, 100%, 55%);
+	color: #fff;
+	border-radius: 10px;
+	font-family: 'Kumbh sans', sans-serif;
+}
+
+.btn-gaps{
+	padding: 15px;
+	font-size: 20px;
+	color: hsl(26, 100%, 55%);
+	border: none;
+}
+
+.inner-gaps{
+	padding: 15px;
+	font-weight: 700;
+}
+
+.added-items{
+	display: none;
+	width: 20%; 
+	float: right;
+	border: 1px solid black;
+}
+
+#counter{
+	display: flex;
+	user-select: none;
+	position: relative;
+	background: hsl(26, 100%, 55%);
+	width: 1.3rem;
+	height: 1.3rem;
+	font-size: .8rem;
+	border-radius:50%;
+	align-items: center;
+	justify-content: center;
+	top: -10px;
+	left: 30px;
+
+}
+
+#counter-container{
+	display: none;
+}
+
+.d-avatar{
+	position: relative;
+	top: -35px;
+}
+
+#prev-price{
+	display: block;
+	margin-block-start:10px;
+	text-decoration: line-through;
+	font-weight: 700;
+	color: hsl(220, 14%, 75%);
+
+}
+
+.selection{
+	display: flex;
+	margin-block-start:30px;
+}
+
+#paragraph-one{
+	font-size: 15px; 
+	font-weight: 400; 
+	color: hsl(220, 14%, 75%);
+}
+
+#black-friday{ 
+	font-size: 20px; 
+	font-weight: 500; 
+	letter-spacing: 2px;
+	font-weight: 700;
+}
